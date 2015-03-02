@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Calculator Project </title>
+		<link rel='stylesheet' href='assets/stylesheet/calculator.css'>
+		<script type="text/javascript" src="calculator.js"></script>
+	</head>				
+
+
+
+	<body>
+
+				<div class="calculator">
+					
+					<div class="header_bar">
+						<input type="text" id ="input" ><br>
+						<input type="text" id="result"  disabled><br>
+					</div>
+					
+				    	
+				    	<div class="row1">
+							<button type="button" onclick="add_number('1')">1</button>
+							<button type="button" onclick="add_number('2')">2</button>
+							<button type="button" onclick="add_number('3')">3</button>
+							<button type="button" id="add" onclick="add_operator('+')">+</button>
+						</div>
+
+
+						<div class="row2">
+							<button type="button" onclick="add_number('4')">4</button>
+							<button type="button" onclick="add_number('5')">5</button>
+							<button type="button" onclick="add_number('6')">6</button>
+							<button type="button" id="subtract" onclick="add_operator('-')">-</button>
+						</div>
+
+
+						<div class="row3">
+							<button type="button" onclick="add_number('7')">7</button>
+							<button type="button" onclick="add_number('8')">8</button>  
+							<button type="button" onclick="add_number('9')">9</button>
+							<button type="button" id="multiply" onclick="add_operator('*')">X</button>
+						</div>
+
+
+						<div class="row4">
+							<button type="button" id="divide" onclick="add_operator('/')">/</button>
+							<button type="button" onclick="add_number('0')">0</button>
+							<button type="button" id="dot" onclick="add_number('.')">.</button>
+							<button type="button" id="negative" onclick="add_number('-')">&plusmn;</button>
+
+						</div>
+
+
+					<div class="row5">
+
+					<button type="button" id="calculate" onclick="calculator()">===</button>
+				    <button type="button" id="refresh" onclick="reset_calculator()">Clear</button>
+				    </div>
+				    
+				</div>
+		
+
+	</body>
+
+</html>
